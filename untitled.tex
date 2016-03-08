@@ -1,3 +1,14 @@
-\textit{Oh, an empty article!}
+\begin{abstract}
+Pri upravljanju daljinskega vročevodnega omrežja si pomagamo tudi z meritvami tekočinskih pretokov v izpostavljenih delih omrežja. Praviloma pri tem uporabljamo komercialne merilnike pretokov. Predstavili bomo možnost, kako lahko pretoke določimo na podlagi temperaturnih meritev, ki jih prav tako obdelujemo za potrebe omenjenega upravljanja. Temperaturnih meritev je v sistemu relativno veliko. Naša metoda temelji na dejstvu, da je  časovni potek  temperature v določeni točki odvisen tudi od pretoka. Odvisnost se kaže kot časovni zamik temperaturnih sprememb med posameznimi merilnimi mesti. 
 
-You can get started by \textbf{double clicking} this text block and begin editing. You can also click the \textbf{Text} button below to add new block elements. Or you can \textbf{drag and drop an image} right onto this text. Happy writing!
+Temperaturne meritve na različnih merilnih mestih v omrežju jasno kažejo, da so si časovni poteki temperature na različnih mestih podobni. Zaradi toplotnih izgub vzdolž cevi je temperatura na merilnem mestu, ki je bližje uporabniku,  nižja. Če se temperaturno nihanje ali motnja pojavi na merilnem mestu bliže izvoru, se s časovnim zamikom pojavi tudi na merilnem mestu, ki je bliže uporabniku. Ta časovni zamik lahko uporabimo za določitev pretoka.
+
+Temperaturni potek v različnih delih cevi opišemo s konvekcijsko-difuzijsko enačbo. Prevajanje toplote, ki ga opisuje difuzijski člen, vpliva na temperaturno razliko med obema merilnima mestoma (toplotne izgube), zanemarljivo pa vpliva na časovni zamik, ki je posledica masnega toka po cevi (konvekcijski del). Časovni zamik je tako sorazmeren z razdaljo med merilnima mestoma in s presekom cevi, obratno sorazmeren pa je s pretokom.
+
+Če določimo časovni zamik med obema časovnima potekoma temperature, lahko določimo tudi pretok.
+Podatke smo zajemali istočasno na dveh merilnih mestih v enakomernih časovnih presledkih.   Za določeni časovni interval (časovno okno) v naprej izbrane dolžine, smo izračunali križno-korelacijsko funkcijo med temperaturnima potekoma. Križno-korelacijska funkcija pove, koliko sta si dva signala podobna, če ju zamaknemo za različne čase. Iskani časovni zamik je ravno tam, kjer ima križno-korelacijska funkcija maksimum.
+
+Metoda križne korelacije ima omejitve. Najbolje deluje, če je temperaturni signal dovolj značilen, da ima križno-korelacijska funkcija dovolj izrazit maksimum. V stacionarnem stanju, ko se temperatura ne spreminja, ali ko se temperatura enakomerno spreminja, s križno korelacijo ni mogoče določiti časovnega zamika. Druga omejitev te metode je, da lahko na ta način določimo le povprečni zamik in s tem le povprečni pretok v izbranem časovnem oknu. Predvidevamo, da bi z naprednejšimi metodami obdelave signalov lahko bolj zanesljivo in natančno določali časovni zamik in posledično pretok.
+
+Model, ki opisuje odvisnost temperaturnega poteka od pretoka, smo preskusili  z  meritvami temperature na dejanskem omrežju, vročevodnem omrežju Ljubljane, in rezultate preverili z instaliranimi merilniki pretoka. 
+\end{abstract}
